@@ -29,6 +29,9 @@ border:0.5px solid #9e0616;
     opacity:0.9;
     width:50px;
     height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .Green{
     display: flex;
@@ -58,9 +61,17 @@ border:0.5px solid #027478;
     grid-column: 1/7;
     grid-row: 10/16;
 }
+.step>div {
+    flex: 1;
+}
+.step>div img{
+    max-width: 100%;
+}
 .step {
+    text-align: center;
     border: 0.5px solid #b3b3b3;
     background-color: aliceblue;
+    display: flex;
 }
 .centerbox {
     grid-column: 7/10;
@@ -97,8 +108,9 @@ border:0.5px solid #027478;
     background-size: 56.57px 56.57px;
 }
 .place{
-    margin-left: 12px;
-    margin-top: 6px;
+    display: inline-block;
+    width: 25px;
+
 }
 .dice{
     position: absolute;
@@ -106,3 +118,59 @@ border:0.5px solid #027478;
     top: 0;
     left: -102px;
 }
+.two
+{
+display: inline-block;
+margin: 5px;
+width: 20px;
+
+}
+/*  function upadtMainPathvalueAtindex(index,value,color,imgid){
+            var valueAtIndex='';
+            console.log(color);
+                    valueAtIndex=mainpath[index];
+                if (valueAtIndex) {
+                        if(valueAtIndex.includes(color)){
+                            remove_elements(value)
+                            mainpath[index] +=`,${value}`;
+                        for(i=0;i<playersData.length;i++){
+                            if(playersData[i].color==color){  
+                                document.getElementById(index).innerHTML+=`<img src="../doodles/${playersData[i].color}.png" class="place"  ></img>`;
+                            };
+                        }
+                        
+                        }
+                        else{
+                            remove_elements(value)
+                        if(index==35||index==40||index==48||index==1||index==9||index==14||index==22||index==27){
+                            for(i=0;i<playersData.length;i++){
+                            mainpath[index] +=`,${value}`;
+                            if(playersData[i].color==color){
+                            document.getElementById(index).innerHTML+=`<img src="../doodles/${playersData[i].color}.png" class="place"></img>`;
+                            }
+                          }
+                        }
+                        else{
+                            remove_elements(value)
+                            mainpath[index]=value;
+                            for(i=0;i<playersData.length;i++){
+                                if(playersData[i].color==color){
+                                    document.getElementById(index).innerHTML=`<img src="../doodles/${playersData[i].color}.png" class="place"></img>`;
+                                };
+                            }
+                        }
+                    }
+                        }
+                    else {      
+                                remove_elements(value)
+                                mainpath[index]=value;
+                                for(i=0;i<playersData.length;i++){
+                                    for(j=0;j<4;j++){
+                                    if(playersData[i].color==color){
+                                        document.getElementById(index).innerHTML=`<img src="../doodles/${playersData[i].color}.png" class="place"></img>`;
+                                    }
+                                    }
+                                    
+                                }
+                            }  
+                        } */
