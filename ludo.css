@@ -61,9 +61,9 @@ border:0.5px solid #027478;
     grid-column: 1/7;
     grid-row: 10/16;
 }
-.step>div {
+/* .step>div {
     flex: 1;
-}
+} */
 .step>div img{
     max-width: 100%;
 }
@@ -76,13 +76,8 @@ border:0.5px solid #027478;
 .centerbox {
     grid-column: 7/10;
     grid-row: 7/10;
-    width: 0px;
-    height: 0px;
-    border-top: 60px solid #00e34c;
-    border-bottom: 60px solid #04c3c9;
-    border-left: 60px solid #f7162d;
-    border-right: 60px solid #f7bb05;
 }
+
 .yellowsafe {
     background-color: #f7bb05;
     border: 0.5px solid #9c7605;
@@ -125,52 +120,86 @@ margin: 5px;
 width: 20px;
 
 }
-/*  function upadtMainPathvalueAtindex(index,value,color,imgid){
-            var valueAtIndex='';
-            console.log(color);
-                    valueAtIndex=mainpath[index];
-                if (valueAtIndex) {
-                        if(valueAtIndex.includes(color)){
-                            remove_elements(value)
-                            mainpath[index] +=`,${value}`;
-                        for(i=0;i<playersData.length;i++){
-                            if(playersData[i].color==color){  
-                                document.getElementById(index).innerHTML+=`<img src="../doodles/${playersData[i].color}.png" class="place"  ></img>`;
-                            };
-                        }
-                        
-                        }
-                        else{
-                            remove_elements(value)
-                        if(index==35||index==40||index==48||index==1||index==9||index==14||index==22||index==27){
-                            for(i=0;i<playersData.length;i++){
-                            mainpath[index] +=`,${value}`;
-                            if(playersData[i].color==color){
-                            document.getElementById(index).innerHTML+=`<img src="../doodles/${playersData[i].color}.png" class="place"></img>`;
-                            }
-                          }
-                        }
-                        else{
-                            remove_elements(value)
-                            mainpath[index]=value;
-                            for(i=0;i<playersData.length;i++){
-                                if(playersData[i].color==color){
-                                    document.getElementById(index).innerHTML=`<img src="../doodles/${playersData[i].color}.png" class="place"></img>`;
-                                };
-                            }
-                        }
-                    }
-                        }
-                    else {      
-                                remove_elements(value)
-                                mainpath[index]=value;
-                                for(i=0;i<playersData.length;i++){
-                                    for(j=0;j<4;j++){
-                                    if(playersData[i].color==color){
-                                        document.getElementById(index).innerHTML=`<img src="../doodles/${playersData[i].color}.png" class="place"></img>`;
-                                    }
-                                    }
-                                    
-                                }
-                            }  
-                        } */
+/* step[i].id==35||step[i].id==40||step[i].id==48||step[i].id==1||step[i].id==9||step[i].id==14||step[i].id==22||step[i].id==27 */
+
+[id='35'],[id='40'],[id='48'],[id='1'],[id='9'],[id='14'],[id='22'],[id='27']
+{
+    background-image: url('./doodles/star (1).png');
+    background-size: cover;
+}
+[id='72']{
+    background-image: url('./doodles/box.png');
+    background-size: cover;
+}
+.redcenter{
+    position: fixed;
+    left: 45%;
+    top: 48%;
+}
+.bluecenter{
+    position: fixed;
+    left: 49%;
+    top: 54%;   
+}
+.redwin{
+    height: 55px;
+    width: 27px;
+    border: 0.5px solid;
+    border-color: black;
+    position: relative;
+    bottom: -31px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+/* .redwin>div {
+    flex: 1;
+} */
+.redwin>div img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.greenwin{
+    width: 97px;
+    height: 31px;
+    right: -16%;
+    border: 0.5px solid;
+    border-color: black;
+    position: relative;
+    /* bottom: -31px; */
+    display: flex;
+}
+/* .greenwin>div {
+    flex: 1;
+} */
+.greenwin>div img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.bluewin{
+    width: 66px;
+    height: 26px;
+    top: 75%;
+    right: 8%;
+    border: 0.5px solid;
+    border-color: black;
+    position: relative;
+    display: flex;
+}
+.bluewin>div img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.yellowwin{
+    width: 27px;
+    height: 55px;
+    border: 0.5px solid;
+    border-color: black;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.yellowwin>div img{
+    max-width: 100%;
+    max-height: 100%;
+}
