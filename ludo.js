@@ -236,7 +236,7 @@ var path=[
                             console.log("add");
                             remove_elements(value)
                             mainpath[index] +=`,${value}`;
-                            document.getElementById(index).innerHTML="";
+                            document.getElementById(index).innerHTML=""; 
                             (mainpath[index].split(',')).forEach(element => {
                                 let img = document.createElement('img');
                                 img.src = '/doodles/' + element.split('-')[0] + '.png';
@@ -311,8 +311,7 @@ var path=[
                         }
                     else {      
                                 remove_elements(value);
-                                mainpath[index]=value;
-                                debugger;
+                                mainpath[index]=value; 
                                 (mainpath[index].split(',')).forEach(element => {
                                     
                                     let img = document.createElement('img');
@@ -463,6 +462,9 @@ var path=[
                 tem=tem.join("");
                 console.log(token);
                 updateposition(token,tem);
+            }
+            function playerturn(){
+
             }
    
  
